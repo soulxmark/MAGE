@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html langr="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MAGE</title>
+        <link rel="icon" type="image/x-icon" href="images/Main/iconLogo.jpg">
+        <link rel="stylesheet" href="CSS/style.css"> 
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <nav class="NavM">
+                <a href="Education.html">Education</a>
+                <a href="#">Project</a>
+                <a id="logo_link" href="index.html">
+                    <img class="logo" src="images/Main/iconLogo.jpg" alt="MAGE">
+                </a>
+                <a href="page2.html">About</a>
+                <a href="page3.html">Contact Me</a>
+              </nav>
+        </header>
+        <main><br>
+           
+        </section>
+        <footer>
+          <h3>Copyright © 2022 MAGE</h3>
+              <a href="site-plan.html">Home</a>
+              <a href="contactus.html">About</a>
+              <a href="contactus.html">Contact Me</a>
+        <div class="social">
+              <a href="https://www.facebook.com/OmegaXRyukensai" target="_blank">
+                  <img src="images/Logo_Social_Media/Facebook.png" alt="fb icon">
+              </a>
+              <a href="https://www.facebook.com/messages/t/100028770826605" target="_blank">
+                  <img src="images/Logo_Social_Media/Messenger.png" alt="Messenger">
+              </a>
+              <a href="https://www.linkedin.com/in/markestimada/" target="_blank">
+                  <img src="images/Logo_Social_Media/linkedin.png" alt="linkedin">
+              </a>
+          </div>
+      </footer>
+    
+<script>
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+        </script>
+    </div>
+</body></html>

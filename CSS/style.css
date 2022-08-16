@@ -30,11 +30,13 @@ img {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
+    border-radius: 2px;
   }
   .NavM a:hover {
     text-decoration: none;
     background-color: rgba(21, 20, 23, 0.54);
     color: #fff;
+    border-radius: 50%;
   }  
     
     .logo {
@@ -50,7 +52,7 @@ img {
     /* Footer Section*/
 footer {
   background-color:   #2D2928;
-  padding:            25px 50px;
+  padding:            20px 50px;
   margin-top:         200px;
   display:            flex;
   justify-content:    space-around;
@@ -69,10 +71,20 @@ footer h3 {
 footer a {  
   color:             #fff;
   text-decoration:     none;
+  padding-top:          10px;
+  
 }
+.social  a{  
+    padding-bottom:   20px;
+    border-radius: 45%;
+  }
+
 
 footer  a:hover {
-  background-color: #fff;
-  color:            #000;
+
+  color:            yellow;
   transition:         all 1s ease-out;
+  border-radius: 2px;
+  
+ 
 }
