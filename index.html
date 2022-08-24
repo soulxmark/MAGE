@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MAGE</title>
-        <link rel="icon" type="image/x-icon" href="images/Main/iconLogo.jpg">
+        <link rel="icon" type="image/x-icon" href="images/Main/logo.png">
         <link rel="stylesheet" href="CSS/style.css"> 
 </head>
 
@@ -13,18 +13,43 @@
     <div id="content">
         <header>
             <nav class="NavM">
+                
                 <a href="Education.html">Education</a>
                 <a href="#">Project</a>
                 <a id="logo_link" href="index.html">
-                    <img class="logo" src="images/Main/iconLogo.jpg" alt="MAGE">
+                    <img class="logo" src="images/Main/iconLogo.png" alt="MAGE">
                 </a>
                 <a href="page2.html">About</a>
                 <a href="page3.html">Contact Me</a>
               </nav>
         </header>
         <main><br>
-           
-        </section>
+            <div id="hero">
+                <div id="hero-box">
+                    <img id="hero-img" src="images/Main/background_Content.jpg" alt="People enjoying white water rafting">
+                </div>
+                <section id="hero-msg">
+                    <h1>Plans and Goals Leads to Sucess!</h1>
+                    <h4>Come and See!</h4>
+                </section>
+            </div>
+
+            <section class="about" id="about">
+                <h1>About</h1>
+                <p class="about-text"> 
+                    Hello! My name is Mark and I enjoy creating things that live on the internet. My interest in web development started back in 2017 — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
+                    Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.
+                    Here are a few technologies I’ve been working with recently:
+                </p>
+                <li>Java Script</li>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <a class="about-img" href="#">
+                       <img src="images/Main/meh2.jpg" alt="Adobo">
+                </a>
+            </section>
+        </main>
+        
         <footer>
           <h3>Copyright © 2022 MAGE</h3>
               <a href="site-plan.html">Home</a>
@@ -44,32 +69,7 @@
       </footer>
     
 <script>
-        let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
+  window.onscroll = function() {myFunction()};
         </script>
     </div>
 </body></html>
