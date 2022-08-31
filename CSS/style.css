@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');/* Properties Global*/
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@1,100&display=swap');
+html {
+  scroll-behavior: smooth;
+}
 #content {
     max-width:      1600px;
     margin:         0 auto;
@@ -41,8 +44,6 @@ img {
     
     .logo {
         width:       150px;
-    }
-    #logo_link{
         padding-top: -5px;
        
         justify-self: center;
@@ -123,6 +124,8 @@ footer  a:hover {
 }
 
 /*Content*/
+
+/*About*/
 .about {
   padding-top: 10px;
   padding-bottom: 3rem;
@@ -146,10 +149,11 @@ grid-row: 2;
 
 
 .about-img {
-grid-row: 1/5;
-grid-column: 2;
-max-width: fit-content;
-padding: 20px;
+  grid-row: 1/5;
+  grid-column: 2;
+  max-width: fit-content;
+  padding: 20px;
+  animation: fadeIn 1s;
 }
 @media screen and (max-width: 900px) {
   #hero, .home-grid {
