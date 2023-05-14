@@ -9,12 +9,12 @@
 
     <link rel="stylesheet" href="Resources/CSS/style.css"> 
 </head>
-<script src="Resources/JavaScript/scrollingDown.js">
-</script>
+<script src="Resources/JavaScript/scrollingDown.js"></script>
+<script src="Resources/JavaScript/fadeInAnimation.js"></script>
 <body>
       <header>
             <a id="logo_link" href="#">
-                <img class="logo" src="Resources/images/Main/iconLogo.png" alt="">
+                <img id="logo" src="Resources/images/Main/iconLogo.png" alt="">
             </a>
             <nav>
                 <a href="index.html">Projects</a>
@@ -31,7 +31,7 @@
                 <img id="hero-img" src="Resources/images/Main/bg_Main.png" alt="People enjoying white water rafting">
             </div>
             <section id="hero-msg">
-                <h1>Plans and Goals Leads to Sucess!</h1>
+                <h1>Plans and Goals Leads to Success!</h1>
                 <p>See my portfolio</p>
                 <a href="#Education" class="scroll-down" address="true"></a>
             </section>
@@ -79,6 +79,8 @@
                 <div style="clear: both;"></div>
             </ul>
         </div>
+        
+</section>
         <!--About Section-->
         <section class="about" id="about">
             <h1>About</h1>
@@ -97,7 +99,8 @@
             </div>
         </section>
         <!--Contact Me-->
-      
+       
+       
         <footer>
             <h3>MAGE &copy; 2022 - Mark Estimada</h3>
                 <a href="site-plan.html">Site Plan</a>
@@ -114,7 +117,28 @@
                 </a>
             </div>
         </footer>
-    <script src="Resources/JavaScript/effects.js"></script>
-    <script src="Resources/JavaScript/Function.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            $(function() {
+                
+                var documentEl = $(document),
+                    fadeElem = $('#hero');
+                
+                
+                documentEl.on('scroll', function() {
+                    var currScrollPos = documentEl.scrollTop();
+                    
+                    fadeElem.each(function() {
+                        var $this = $(this),
+                            elemOffsetTop = $this.offset().top;
+                        if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/400);
+                    }); 
+                });
+                
+            });
+        
+        </script>
     </body>
 </html>

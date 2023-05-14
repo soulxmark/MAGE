@@ -22,8 +22,8 @@ body {
     padding-top: 10px;
 }
 
-.logo {
-    width:       200px;
+#logo {
+    width:       150px;
 }
 #logo_link{
     padding-top: 5px;
@@ -75,16 +75,13 @@ nav a:hover {
     margin: 10%;
 }
 #hero-img {
+    
     width:       100%; 
     display:     flex;
     text-align: center;
     filter: blur(2px);
 
 }
-
-
-
-
 
 /*Second Content About*/
 .about {
@@ -208,6 +205,7 @@ header {
     margin: 70px auto;
     padding: 40px 0;
     width: 100%;
+    
   }
   
   .timeline::before{
@@ -326,7 +324,7 @@ header {
         opacity: 0.7;
       }
      
- /*Scrolling down Animation*/     
+ /*Scrolling down Animation Icon*/     
 .scroll-down {
   opacity: 1;
   -webkit-transition: all .5s ease-in 3s;
@@ -363,6 +361,7 @@ header {
     border: 2px solid white;
     border-width: 0px 0 2px 2px;
 }
+/*Fade In Effect*/
 
 @keyframes bounce {
   0%,
