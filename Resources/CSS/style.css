@@ -136,7 +136,7 @@ footer {
     align-items:        center;
 }
 footer .social img{
-    padding-top:        15px;
+    padding:        1px;
 }
 footer h3 {
     color:            #fff;
@@ -146,12 +146,31 @@ footer h3 {
 footer a {  
     color:             #fff;
     text-decoration:     none;
+    border-radius: 50%;
 }
+footer a:hover {  
 
-footer  a:hover {
-    background-color: #fff;
-    color:            #2D2928;
-    transition:         all 1s ease-out;
+  border: none;
+
+
+  border-radius: 2px;
+  padding: -5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+
+  transition:         all 1s ease-out;
+
+
+}
+.social a:hover{
+  border-radius: 2px;
+  background-color: white;
+  border: none;
+
+
+  transition:         all 1s ease-out;
 }
 
 
@@ -217,9 +236,7 @@ header {
     background-color: #e4e4e4;
   }
   
-  /*.timeline ul li:hover .time{
-    transform: scale(1.1);
-  }*/
+
   
   /*Elementos de lista*/
   .timeline ul li{
