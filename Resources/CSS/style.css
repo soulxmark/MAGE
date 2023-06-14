@@ -1,0 +1,407 @@
+/*Import Font Section*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo&:wght@400;700&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+#content {
+    max-width:      1800px;
+    margin:         0 auto;
+}
+body {
+    background-color: #fcfbfb;
+    font-family:        'Bebas Neue', sans-serif;
+    font-size:          22px;
+    margin:             0;
+    padding:            0;
+}
+
+.icon {
+    width:       80px;
+    padding-top: 10px;
+}
+
+#logo {
+    width:       100px;
+}
+#logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+
+/*Navigation section Header*/
+ 
+nav {
+    list-style:             none;
+    text-decoration:      none;
+    display:              grid;
+    grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
+    align-items:          center;
+    padding:              1em;
+    font-size:            1.1em;
+    color: #000;
+}
+nav a {
+    text-decoration:        none;
+    padding:                35px;
+    color:                #000;
+    transition:             all 1s ease-out;
+    font-family:            "Bebas Neue";
+    text-align:              center;
+    
+}
+nav a:hover {
+  background-color:   rgba(16, 16, 18, 0.661);
+    color:            #fff;
+}
+
+/*hero Content */
+#hero-msg h1 {
+    text-align:     center;
+    color:        #000;
+    font-family:    'Exo', sans-serif;
+    margin:         13%;
+    
+}
+
+#hero-msg p {
+    font-size:       2rem;
+    color:         #000;
+    font-family:     'Exo', sans-serif;
+    text-align: center;
+    margin: 10%;
+}
+#hero-img {
+    
+    width:       100%; 
+    display:     flex;
+    text-align: center;
+    filter: blur(2px);
+
+}
+
+/*Second Content About*/
+.about {
+    background:#000;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 1em 2em;
+    gap: 1em;
+  }
+
+.about-text {
+  grid-column: 1;
+  grid-row: 2;
+}
+.button-box {
+  grid-column: 1;
+  grid-row: 3;
+  justify-self: center;
+  padding: 1rem 2rem;
+  border-radius: .6rem;
+  margin-top: 1rem;
+  color: #EDF2F4;
+  text-transform: uppercase;
+  background-color: #2D2928;
+  text-decoration: none;
+  font-family: 'Bebas Neue';
+  font-size: 18px;
+}
+.about-img {
+  grid-row: 1/5;
+  grid-column: 2;
+  max-width: fit-content;
+}
+img {
+  max-width: 100%;
+}
+.button-box:hover {
+  background: #4F3C24;
+  letter-spacing: 1rem;
+}
+
+/*Footer Section*/
+footer {
+    background-color:   #000;
+    padding:            25px 50px;
+    margin-top:         200px;
+    display:            flex;
+    justify-content:    space-around;
+    align-items:        center;
+}
+footer .social img{
+    padding:        1px;
+}
+footer h3 {
+    color:            #fff;
+}
+
+
+footer a {  
+    color:             #fff;
+    text-decoration:     none;
+    border-radius: 50%;
+}
+footer a:hover {  
+
+  border: none;
+
+
+  border-radius: 2px;
+  padding: -5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+
+  transition:         all 1s ease-out;
+
+
+}
+.social a:hover{
+  border-radius: 2px;
+  background-color: white;
+  border: none;
+
+
+  transition:         all 1s ease-out;
+}
+
+
+
+/*Grid Section Layout - Main Page*/
+header {
+    display:               grid;
+    grid-template-columns: 150px auto;
+}
+
+
+#hero-box {
+    grid-column:            1/4;
+    grid-row:               1/3;
+}
+#hero-msg h4 {
+    color:                white;
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top:            -100px; 
+}
+#hero-msg {
+    grid-column:           2/3;
+    grid-row:              1/2;
+    margin-top:            100px;
+}
+#hero-box {
+    grid-column:           1/4;
+    grid-row:              1/3;
+    z-index:               -1;
+}
+                
+              
+#background{
+    grid-column:           1/11;
+    grid-row:              4/9;
+    align-self:            center;
+} 
+
+
+.msg{
+    grid-column:           6/10;
+    grid-row:              6/7;
+}
+
+/*Timeline*/
+.timeline{
+    position: relative;
+    margin: 70px auto;
+    padding: 40px 0;
+    width: 100%;
+    
+  }
+  
+  .timeline::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #e4e4e4;
+  }
+  
+
+  
+  /*Elementos de lista*/
+  .timeline ul li{
+    list-style: none;
+    position: relative;
+    width: 40%;
+    padding: 20px 40px;
+  }
+  
+  .timeline ul li:nth-child(odd){
+    float: left;
+    text-align: right;
+    clear: both;
+  }
+  
+  .timeline ul li:nth-child(even){
+    float: right;
+    text-align: left;
+    clear: both;
+  }
+  .picture{
+    width: 150px;
+  }
+  
+  
+  /*Circulo indicador*/
+  .timeline ul li::before{
+    content: '';
+    position: absolute;
+    top: 40%;
+    width: 10px;
+    height: 10px;
+  
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px skyblue;
+  }
+  
+  .timeline ul li:nth-child(odd)::before{
+    right: -6px;
+  }
+  
+  .timeline ul li:nth-child(even)::before{
+    left: -4px;
+  }
+  
+
+  
+  /*Fecha*/
+  .time{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    color:#000;
+  }
+  
+  
+  /*Contenido*/
+  .content{
+    padding-bottom: 20px;
+  }
+  
+  .timeline ul li h2{
+    font-weight: 500;
+    color: #000;
+  }
+  
+  .timeline ul li p{
+    margin: 10px 0;
+    font-weight: 300;
+  }
+      /*Contact Me*/
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+      }
+      
+      .title {
+        color: grey;
+        font-size: 18px;
+      }
+      
+      button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+      
+      a {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+      }
+      
+      button:hover, a:hover {
+        opacity: 0.7;
+      }
+     
+ /*Scrolling down Animation Icon*/     
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+/*Fade In Effect*/
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}

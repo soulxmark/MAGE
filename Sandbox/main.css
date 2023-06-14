@@ -1,0 +1,15 @@
+.container div
+{ 
+  padding: 20px; 
+  margin: 50px 100px;
+  color: white;
+}
+
+.noEffect {
+  background-color: #777; 
+}
+
+.reveal {
+  opacity: 0;
+  background-color: #9b003b;
+}

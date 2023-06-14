@@ -1,0 +1,15 @@
+<br><br><br>
+        <section>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a>Dynamic Website</a></div>
+                <div class="grid-item">Static Website</div>
+                <div class="grid-item">Python</div>  
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>  
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">89</div>  
+              </div>
+        </section>

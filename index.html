@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAGE</title>
+    <link rel = "icon" href = "Resources/images/Main/iconLogo.png" type = "image/x-icon">
+    <link rel="stylesheet" href="Resources/CSS/style.css"> 
+</head>
+<script src="Resources/JavaScript/scrollingDown.js"></script>
+<script src="Resources/JavaScript/fadeInAnimation.js"></script>
+<body>
+      <header>
+            <a id="logo_link" href="#">
+                <img id="logo" src="Resources/images/Main/iconLogo.png" alt="">
+            </a>
+            <nav>
+                <a href="index.html">Portfolio</a>
+                <a href="Project.html">Projects</a>
+                <a href="activities.html">Education</a>
+                <a href="foods.html">About</a>
+            </nav>
+        </header>
+        <main>
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="Resources/images/Main/bg_Main.png" alt="People enjoying white water rafting">
+            </div>
+            <section id="hero-msg">
+                <h1>Plans and Goals Leads to Success!</h1>
+                <p>See my portfolio</p>
+                <a href="#Education" class="scroll-down" address="true"></a>
+            </section>
+        </div>
+        
+        <!--Education-->
+        <div class="timeline" id="Education">
+            <ul>
+                <h1>Education</h1>
+                <li>
+                    <div class="content">
+                    <div class="time">
+                        <img class="picture" src="Resources/images/Education/STI.png" alt="MAGE">
+                        <h1>STI Muñoz</h1>
+                            <h2>ITMAWD - Information Technology Mobile App Web Development</h2>
+                            <h2>Graduated - April 3 2018</h2>
+                    </div>
+                        <p>I have a project it's called Click topShop in C# UI, 
+                            I have a achievements as a software developer i create a application in andriod it's name bugtong 
+                            bugtong in tagalog or in the english called riddles , I created a game called The Last City Hell it was a 2d shooting game i used 
+                            Game Studio for that.  </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <div class="time">
+                            <img class="picture" src="Resources/images/Education/BYUP.png" alt="MAGE">
+                            <h1>BYU Pathway</h1>
+                            <h2>Completion - October 2021 </h2>
+                        </div>
+                        <p>I have completed my certificate in BYU Pathway, I Learned in Basic  Methods Python and  They called Machine learning .</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                    <div class="time">
+                        <img class="picture" src="Resources/images/Education/BYUI.png" alt="MAGE">
+                        <h1>Brigham Young University - Idaho</h1>
+                        <h2>Present - BS Applied Technology</h2>
+                    </div>
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex alias, rem at, quas quia delectus dolorem in molestias eos id est quod voluptatibus repudiandae nostrum. Amet debitis eveniet repellendus magni.</p>
+                    </div>
+                </li>
+                <div style="clear: both;"></div>
+            </ul>
+        </div>
+        
+</section>
+        <!--About Section-->
+        <section class="about" id="about">
+            <h1>About</h1>
+                <p class="about-text"> 
+                    Hi, I'm Mark Augustine Gregorio Estimada Front- End Developer 2yrs developer i have some project to create , i also experience 
+                </p>
+            <!--List-->
+            <div>
+                <li>Java Script</li>
+                    <li>HTML5</li>
+                        <li>CSS</li>
+                            <li>C#</li>
+            </div>
+            <div class="about-img">
+                   <img src="Resources/images/Main/meh2.jpg" alt="Adobo">
+            </div>
+        </section>
+       
+       
+        <footer>
+            <h3>MAGE &copy; 2022 - Mark Estimada</h3>
+                <a href="#logo_link">Scroll to top</a>
+                <a href="contactus.html">Contact Me</a>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="Resources/images/Logo_Social_Media/Facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="Resources/images/Logo_Social_Media/Messenger.png" alt="twitter icon">
+                </a>
+                <a href="https://www.linkedin.com/in/markestimada/" target="_blank">
+                    <img src="Resources/images/Logo_Social_Media/Linkedin.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+        <!--JavaScript-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="Resources/JavaScript/scrollingDown.js"></script>
+        <script type="text/javascript">
+            
+            $(function() {
+                
+                var documentEl = $(document),
+                    fadeElem = $('#hero');
+                
+                
+                documentEl.on('scroll', function() {
+                    var currScrollPos = documentEl.scrollTop();
+                    
+                    fadeElem.each(function() {
+                        var $this = $(this),
+                            elemOffsetTop = $this.offset().top;
+                        if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/400);
+                    }); 
+                });
+                
+            });
+                
+        </script>
+    </body>
+</html>
