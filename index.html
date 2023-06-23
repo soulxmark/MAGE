@@ -18,7 +18,7 @@
             </a>
             <nav>
                 <a href="index.html">Portfolio</a>
-                <a href="Project.html">Projects</a>
+                <a href="Project.html">Projects / Websites</a>
                 <a href="activities.html">Education</a>
                 <a href="foods.html">About</a>
             </nav>
@@ -51,6 +51,8 @@
                             I have a achievements as a software developer i create a application in andriod it's name bugtong 
                             bugtong in tagalog or in the english called riddles , I created a game called The Last City Hell it was a 2d shooting game i used 
                             Game Studio for that.  </p>
+                            <h2>Programming Languages</h2>
+                            <p>HTML,CSS,JavaScript,Java,C#,jquery,MySQL</p>
                     </div>
                 </li>
                 <li>
@@ -60,7 +62,7 @@
                             <h1>BYU Pathway</h1>
                             <h2>Completion - October 2021 </h2>
                         </div>
-                        <p>I have completed my certificate in BYU Pathway, I Learned in Basic  Methods Python and  They called Machine learning .</p>
+                        <p>I have completed my certificate in BYU Pathway, I Learned in Basic  Methods Python and  Machine learning .</p>
                     </div>
                 </li>
                 <li>
@@ -69,9 +71,12 @@
                         <img class="picture" src="Resources/images/Education/BYUI.png" alt="MAGE">
                         <h1>Brigham Young University - Idaho</h1>
                         <h2>Present - BS Applied Technology</h2>
+                        <h2>Certificate - Full Stack Developer </h2>
                     </div>
                         
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex alias, rem at, quas quia delectus dolorem in molestias eos id est quod voluptatibus repudiandae nostrum. Amet debitis eveniet repellendus magni.</p>
+                        <p>
+                            Now i'm taking full-stacks Developer in BYU idaho.
+                        </p>
                     </div>
                 </li>
                 <div style="clear: both;"></div>
@@ -86,21 +91,65 @@
                     Hi, I'm Mark Augustine Gregorio Estimada Front- End Developer 2yrs developer i have some project to create , i also experience 
                 </p>
             <!--List-->
+            <h2>Skills/Programming Languages</h2>
             <div>
-                <li>Java Script</li>
-                    <li>HTML5</li>
-                        <li>CSS</li>
-                            <li>C#</li>
+                <li>Front-End (Html,CSS,JavaScript,jquery)</li>
+                    <li>Machine Learning(C#,Python)</li>
+                        <li>Photo Editing(PhotoShop)</li>
+                            <li>Typing Documents (MS Word,Excel)</li>
+                                <li>.Dotnet Windows App Develoepr (C#)</li>
             </div>
             <div class="about-img">
                    <img src="Resources/images/Main/meh2.jpg" alt="Adobo">
             </div>
         </section>
-       
+        <main class="Phase">
+            <section class="adobo-card">
+                <img class="card-img" src="images/Adobo.jpg" alt="adobo">
+                <h2>Mage Photography</h2>
+                <p>
+                    This website contains my Photography of places in the Philippines.
+                </p>
+            </section>
+            <section class="steak-card">
+                <img class="card-img" src="images/steak.jpg" alt="steak">
+                <h2>Steak</h2>
+                <p>
+                Steak is bolstering sales of its signature steak dishes by delivering this is our best seller, designed to highlight the flavors, sights and sounds that make the restaurant an authority on steak, proving that national chains must have a stronghold on social media when promoting menu items.
+                </p>
+            </section>
+            <section class="shawarma-card">
+                <img class="card-img" src="images/shawarma.jpg" alt="Shawama">
+                <h2>Shawarma</h2>
+                <p>
+                    Our Shawama dish consisting of meat cut into thin slices, stacked in a cone like shape, and roasted on a slowly turning vertical rotisserie or spit. Originally made with lamb or mutton, it is now also made of chicken, turkey, beef, or veal.
+                </p>
+            </section>
+            <br>
+            <section class="liempo-card">
+                <img class="card-img" src="images/Lempo.jpg" alt="Liempo">
+                <h2>Liempo (Pork Belly)</h2>
+                <p>
+                    Inihaw na Liempo marinated in citrus juice, fish sauce, and spices and grilled to juicy perfection. Delicious as an appetizer or main dish!
+                </p>
+            </section>
+            <section class="burger-card">
+                <img class="card-img" src="images/Burger.jpg" alt="burger">
+               
+                <h2>Burger</h2>
+                <p>Our burger has cheese, lettuce, tomato, onion, pickles, bacon, or chilis; condiments such as ketchup, mustard, mayonnaise, relish, or a "special sauce", often a variation of Thousand Island dressing; and are frequently placed on sesame seed buns.The Best Experience you eat</p>
+            </section>
+            <section class="pizza-card">
+                <img class="card-img" src="images/pizza.jpg" alt="pizza">
+                
+                <h2>Pizza</h2>
+                <p>Our original tradition pizza here in our town! flat base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients such as anchovies, mushrooms, onions, olives, vegetables, meat, ham, etc.</p>
+            </section>
+        </main>
        
         <footer>
             <h3>MAGE &copy; 2022 - Mark Estimada</h3>
-                <a href="#logo_link">Scroll to top</a>
+                <a href="#logo_link">Menu</a>
                 <a href="contactus.html">Contact Me</a>
             <div class="social">
                 <a href="https://facebook.com" target="_blank">
@@ -118,7 +167,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="Resources/JavaScript/scrollingDown.js"></script>
         <script type="text/javascript">
-            
+            //For button Scrolling Down
             $(function() {
                 
                 var documentEl = $(document),
@@ -131,7 +180,7 @@
                     fadeElem.each(function() {
                         var $this = $(this),
                             elemOffsetTop = $this.offset().top;
-                        if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/400);
+                        if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/600);
                     }); 
                 });
                 

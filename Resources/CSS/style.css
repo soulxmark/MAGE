@@ -87,7 +87,7 @@ nav a:hover {
 .about {
     background:#000;
     color: #fff;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 3rem;
     display: grid;
     grid-template-columns: 4fr 1fr;
@@ -219,9 +219,10 @@ header {
 }
 
 /*Timeline*/
+
 .timeline{
     position: relative;
-    margin: 70px auto;
+ 
     padding: 40px 0;
     width: 100%;
     
@@ -232,7 +233,7 @@ header {
     position: absolute;
     left: 50%;
     width: 2px;
-    height: 100%;
+    height: 90%;
     background-color: #e4e4e4;
   }
   
@@ -382,6 +383,49 @@ header {
     border: 2px solid white;
     border-width: 0px 0 2px 2px;
 }
+.card-img, .mountains {
+  width:                 100%;
+}
+.card-img {
+  border:                1px solid #4F3C24;
+  transition:            transform .3s;
+  box-shadow:            5px 5px 10px #6f7364;
+}
+.card-img:hover {
+  opacity:               .6;
+  transform:             scale(1.1);
+}
+
+.Phase{
+  display:               grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+.adobo-card{
+  grid-column:           2/4;
+  grid-row:              2;
+}
+.steak-card{
+  grid-column:           5/7;
+  grid-row:              2;
+}
+.shawarma-card{
+  grid-column:           8/10;
+  grid-row:              2;
+} 
+
+.liempo-card{
+  grid-column:           2/4;
+  grid-row:              3;
+}
+.burger-card{
+  grid-column:           5/7;
+  grid-row:              3;
+}
+.pizza-card{
+  grid-column:           8/10;
+  grid-row:              3;
+} 
+
 /*Fade In Effect*/
 
 @keyframes bounce {
